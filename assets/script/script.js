@@ -1,18 +1,19 @@
 console.log("Code-quiz");
 var homepageContainer = document.getElementById("homepage");
 var startQuiz = document.getElementById("start-btn");
-var questionsContainer = document.getElementById("questions-forms");
+var questionsContainer = document.getElementById("question-content");
 var form = document.getElementById("containers");
 var h1 = document.getElementById("question-text");
-var resultsContainer = document.getElementById("choices");
+var resultsContainer = document.getElementById("answers-content");
 
 
 // Start quiz
 startQuiz.addEventListener("click", function () {
     homepageContainer.style.display = "none";
+
     // renderQuestionsContainer();
     questionsContainer.append(quiz[0].question);
-    answersContainer.append(quiz[0].choices);
+    resultsContainer.append(quiz[0].choices);
 });
 
 
