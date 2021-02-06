@@ -22,7 +22,7 @@ startQuiz.addEventListener("click", function() {
 });
  
 
-quiz();
+// quiz();
 function renderQuiz(){
          questionsContainer.innerHTML = "";
          var question = document.createElement("h1");
@@ -33,16 +33,11 @@ function renderQuiz(){
 }
 
 
-quiz.innerHTML = "";
-ulCreate.innerHTML = "";
+// quiz.innerHTML = "";
+// ulCreate.innerHTML = "";
 
 
-for (var i = 0; i < questions.length; i++) {
-    // Appends question title only
-    var question = questions[questionIndex].title;
-    var answers = questions[questionIndex].choices;
-    questionsContainer.textContent = question;
- 
+
     
  // Answer
  function renderAnswer(){
@@ -63,15 +58,10 @@ for (var i = 0; i < questions.length; i++) {
  }
      
      
- // Buttons
- answersContainer.addEventListener("click", function (event){
-     if(event.target.matches("button"))
-     answersContainer.style.display = "visible";
- });
  // // Submit initals form
  function renderInitialsForm(){
      var initialsInput = localStorage.getItem("form-content"); 
- }
+ };
 // // Submit initals form
 // function enterInitials(){
     
