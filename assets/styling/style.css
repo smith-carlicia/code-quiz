@@ -1,0 +1,17 @@
+#start-btn {
+    border-color: purple;
+    background: purple;
+    color: white;
+}
+/* .btn:hover {
+    color: lavender;
+} */
+nav.navbar-brand {
+    color: purple;
+}
+nav.timer {
+    text-align: right;
+}
+p {
+    text-align: center;
+}
