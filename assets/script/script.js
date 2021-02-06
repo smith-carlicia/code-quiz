@@ -4,7 +4,18 @@ var startQuiz = document.getElementById("start-btn");
 var questionsContainer = document.getElementById("question-content");
 var form = document.getElementById("containers");
 var h1 = document.getElementById("question-text");
-var resultsContainer = document.getElementById("answers-content");
+var resultsContainer = document.getElementById("answer-content");
+var initialsForm = document.getElementById("form-content");
+var timerElement = document.getElementById("timer-component");
+var element = document.createElement("ul");
+
+
+var questionIndex = 0;
+var question = 0;
+var choices = [];
+var score = 0;
+var timer = 0;
+var seconds = 0;
 
 
 // Start quiz
@@ -22,6 +33,17 @@ startQuiz.addEventListener("click", function() {
     homepageContainer.style.display = "none";
 });
  
+// function getTheQuestion(){
+//    const currentOne   = question[currentQuestionI];
+
+//    const theTitle = document.getElementById("theID")
+// theTitle.textContent = currentOne.title;
+// choice
+// }
+
+// function getQuestion() {
+//   if(this.value !== quix[])
+// }
 
 // quiz();
 function renderQuiz(){
@@ -33,6 +55,20 @@ function renderQuiz(){
          renderChoices();
 }
 
+
+function renderNextQuestion() {
+        var question = document.createElement("h1");
+        question.textContent = quiz[questionIndex].question;
+        if (this.value !== question.answer) {
+            feedbackEl.textContent = "Wrong";
+            //Penalize time for wrong answer
+            secondsLeft -= 15;
+        
+            if (secondsLeft < 0) {
+              secondsLeft = 0;
+            }
+    }
+}
 
 // quiz.innerHTML = "";
 // ulCreate.innerHTML = "";

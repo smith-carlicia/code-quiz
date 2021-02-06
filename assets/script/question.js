@@ -49,8 +49,11 @@ var quiz = [
 
     for (var i = 0; i < quiz.length; i++) {
         // Appends question title only
-        var question = questions[questionIndex].title;
+        var questionIndex = 0;
+        var question = question[questionIndex].title;
         var answers = questions[questionIndex].choices;
+        
+
         questionsContainer.textContent = question;
         resultsContainer.textContent = choices;
     };
