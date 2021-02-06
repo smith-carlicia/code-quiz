@@ -1,3 +1,7 @@
+var questionsContainer = document.getElementById("question-content");
+var resultsContainer = document.getElementById("answer-content");
+var choices = [];
+
 // Question population
 var quiz = [
         {
@@ -50,8 +54,8 @@ var quiz = [
     for (var i = 0; i < quiz.length; i++) {
         // Appends question title only
         var questionIndex = 0;
-        var question = question[questionIndex].title;
-        var answers = questions[questionIndex].choices;
+        var question = quiz[questionIndex].title;
+        var answers = quiz[questionIndex].choices;
         
 
         questionsContainer.textContent = question;
