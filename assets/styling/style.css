@@ -15,3 +15,11 @@ nav.timer {
 p {
     text-align: center;
 }
+
+
+.hide {
+    display: none !important;
+}
+.hideMe {
+    display: none;
+}

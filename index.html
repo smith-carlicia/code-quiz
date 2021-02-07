@@ -18,12 +18,14 @@
         href="style.css">
     </head>
     <body>
+        <!-- NavBar -->
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand">High Score</a>
             <span class="timer" id="timer-component">
                 Timer:
             </span>
           </nav>
+          <!-- Starting Homepage -->
         <div class="container" id="homepage">
             <div class="row">
                 <div class="col-sm-12 text-center">
@@ -39,19 +41,33 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12 text-center">
-            <div class="row">
-                <div id="question-content"></div>
+        <!-- Quiz Container -->
+        <div class="hide"  id="theQuiz" >
+            <div>
+                <div class="row">
+                    <h2 id="titleMe"></h2>
+                    <div id="question-content"></div>
+                </div>
             </div>
         </div>
+ 
+        <!-- End Screen -->
+    <div id="final-page" style="display: none;" >
+      <p>Final Score <span id="theScore"></span></p>
+      <p>Place Your Intials: <input type="text" id="your_initials" max="3"/></p>
+      <button id="theButton">Submit Your Score</button>
+    </div>
+
+        <!-- Feedback -->
         <div class="row">
             <div class="col-md-2">
-                <div class="col-sm-2 text left" id="answer-content"></div>
+                <div class="col-sm-2 text left" id="feedback"></div>
             </div>
         </div>
        
 
         </div>
+       
        
         <script 
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
