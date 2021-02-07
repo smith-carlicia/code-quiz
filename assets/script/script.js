@@ -113,7 +113,7 @@ function saveTheScore(){
 
 }
 
-// Timer
+// Timer function
 function TikTok(){
     theTime--;
     timerElement.textContent = theTime;
