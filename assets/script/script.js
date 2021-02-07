@@ -108,7 +108,7 @@ function saveTheScore(){
     highscores.push(theScore);
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
-    window.location.gref = "score.js"
+    window.location = "highscores.html"
     }
 
     highscores.forEach(function (score) {
