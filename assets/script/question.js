@@ -11,7 +11,7 @@ var quiz = [
                     "booleans", 
                     "alerts ", 
                     "numbers"],
-            answer: "alerts",
+            answer: "alerts"
         },
         {
             question: "The condition in an if/else statement is enclosed with_____.",
@@ -20,7 +20,7 @@ var quiz = [
                     "curly brackets", 
                     "parantheses", 
                     "square brackets"],
-            answer: "curly brackets",
+            answer: "curly brackets"
         },
         {
             question: "Arrays in Javascript can be used to store_____.",
@@ -29,7 +29,7 @@ var quiz = [
                         "other arrays", 
                         "booleans", 
                         "all of the above"],
-            answer: "all of the above",
+            answer: "all of the above"
         },
         {
             question: "String values must be enclosed within_____when being assigned to variables.",
@@ -38,7 +38,7 @@ var quiz = [
                         "curly brackets", 
                         "quotes", 
                         "parantheses"],
-            answer: "quotes",
+            answer: "quotes"
         },
         {
             question: "A very useful tool used during development and debugging for printing content to the debugger is:",
@@ -47,23 +47,7 @@ var quiz = [
                         "terminal/bash", 
                         "for loops", 
                         "console.log"],
-            answer: "console.log",
-        },
+            answer: "console.log"
+        }
     ];
 
-    for (var i = 0; i < quiz.length; i++) {
-        // Appends question title only
-        var questionIndex = 0;
-        var question = quiz[questionIndex].title;
-        var answers = quiz[questionIndex].choices;
-        
-
-        questionsContainer.textContent = question;
-        resultsContainer.textContent = choices;
-    };
-
-    // Buttons
- resultsContainer.addEventListener("click", function (event){
-    if(event.target.matches("button"))
-    resultsContainer.style.display = "visible";
-});
