@@ -14,7 +14,7 @@ var resultFeedback = document.getElementById("feedback")
 var quizBody = document.getElementById('theQuiz')
 var questionIndex = 0;
 
-var submitTheScore = document.getElementById("theScore");
+var submitTheScore = document.getElementById("theButton");
 var yourInitials = document.getElementById("your_initials");
 var yourScore = document.getElementById("theScore");
 
@@ -95,9 +95,9 @@ function finishedQuiz(){
 
 // Save score and users initials
 function saveTheScore(){
-    var initalS = yourInitials.value.trim();
+    var initials = yourInitials.value.trim();
 
-    if(initalS !== ""){
+    if(initials !== ""){
         var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
     var theScore = {
@@ -110,6 +110,16 @@ function saveTheScore(){
 
     window.location.gref = "score.js"
     }
+
+    highscores.forEach(function (score) {
+        // create li tag for each high score
+        var liTag = document.createElement("li");
+        liTag.textContent = score.initials + " - " + score.score;
+    
+        // display on page
+        var olEl = document.getElementById("highscores");
+        olEl.append(liTag);
+    })
 
 }
 
