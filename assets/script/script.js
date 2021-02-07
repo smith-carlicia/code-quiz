@@ -118,7 +118,7 @@ function saveTheScore(){
     
         // display on page
         var olEl = document.getElementById("highscores");
-        olEl.append(liTag);
+        olEl.append(liTag).textContent;
     })
 
 }
