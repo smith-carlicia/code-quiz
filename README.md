@@ -6,10 +6,16 @@ This codebase is constructed via JavaScript and HTML DOM to provide a dynamic co
 
 ## Screenshot:
 
-## Website URL:  https://smith-carlicia.github.io/code-quiz/
-## GitHub Repo: https://github.com/smith-carlicia/code-quiz.git
+![Homepage](./assets/img/cq1.png)
+![Questions](./assets/img/cq2.png)
+![High Score](./assets/img/cq3.png)
+
+## URLS
+
+![Website URL:](https://smith-carlicia.github.io/code-quiz/)
+![GitHub Repo:](https://github.com/smith-carlicia/code-quiz.git)
 
 ## Sources
-W3schools:
-geekforgeeks:
-MDN: 
+![W3schools:](https://www.w3schools.com/)
+![MDN:](https://developer.mozilla.org/en-US/)
+![jQuery:](https://api.jquery.com/) 
