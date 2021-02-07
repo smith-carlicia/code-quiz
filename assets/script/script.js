@@ -93,7 +93,7 @@ function finishedQuiz(){
 
 }
 
-// Save score
+// Save score and users initials
 function saveTheScore(){
     var initalS = yourInitials.value.trim();
 
