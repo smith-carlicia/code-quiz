@@ -12,10 +12,10 @@ This codebase is constructed via JavaScript and HTML DOM to provide a dynamic co
 
 ## URLS
 
-![Website URL:](https://smith-carlicia.github.io/code-quiz/)
-![GitHub Repo:](https://github.com/smith-carlicia/code-quiz.git)
+* ![Website URL:](https://smith-carlicia.github.io/code-quiz/)
+* ![GitHub Repo:](https://github.com/smith-carlicia/code-quiz.git)
 
 ## Sources
-![W3schools:](https://www.w3schools.com/)
-![MDN:](https://developer.mozilla.org/en-US/)
+* ![W3schools:](https://www.w3schools.com/)
+* ![MDN:](https://developer.mozilla.org/en-US/)
 ![jQuery:](https://api.jquery.com/) 
